@@ -9,9 +9,9 @@ export const Navbar = () => {
         setIsOpen(prev => !prev);
     }
     return (
-        <nav>
+        <nav className="max-w-[1280px] mx-auto ">
             {/* nav container */}
-            <div className="flex border border-blue-300 justify-between items-center px-[1.5rem] py-[1.8rem] mx-auto">
+            <div className="flex border border-blue-300 justify-between items-center px-[1.5rem] py-[1.8rem] mx-auto w-[90%]">
                 {/* Logo */}
                 <div className="border border-blue-200">
                     <Link to="/" className="font-[1.5rem]">Deep Portfolio</Link>
