@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import { Navbar, Footer } from "./components/common/index";
 import { HomePage, AboutPage, ContactPage, ServicePage, BlogPage, PageNotFound } from "./pages/index"
 const App = () => {
   return (
-    <div>
-
+    <div className="bg-gradient-to-b from-black via-slate-900 to-zinc-900">
+      <Navbar />
 
       <Routes>
 
@@ -19,6 +20,7 @@ const App = () => {
 
 
       </Routes>
+      <Footer />
     </div>
   )
 }
