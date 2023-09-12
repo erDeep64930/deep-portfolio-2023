@@ -11,15 +11,15 @@ export const Navbar = () => {
     return (
         <nav className="max-w-[1280px] mx-auto ">
             {/* nav container */}
-            <div className="flex border border-blue-300 justify-between items-center px-[1.5rem] py-[1.8rem] mx-auto w-[90%]">
+            <div className="flex border border-blue-300 justify-between items-center mx-[1.5rem] my-[1.8rem] mx-auto w-[90%]">
                 {/* Logo */}
                 <div className="border border-blue-200">
-                    <Link to="/" className="font-[1.5rem]">Deep Portfolio</Link>
+                    <Link to="/" className="font-bai font-bold text-3xl">Deep Portfolio</Link>
                 </div>
                 {/* hamburger menu */}
                 <div className="cursor-pointer border border-blue-200 sm:hidden " onClick={toggleMenu}>
                     {
-                        isOpen ? <TfiAlignRight className="h-[1.25rem] w-[1.25rem]" /> : <TfiClose className="h-[1.25rem] w-[1.25rem]" />
+                        isOpen ? <TfiAlignRight className="h-[1.25rem] w-[1.25rem] font-bold" /> : <TfiClose className="h-[1.25rem] w-[1.25rem] font-bold" />
                     }
 
                 </div>
